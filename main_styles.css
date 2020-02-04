@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html{
+    width: 100%;
+    height: 100%;
+  }
+
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1.42;
+    font-size: 16px;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    /* to smooth fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.hero-image_container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("globe.jpg");
+    max-height: 50%;
+    height: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+
+}
+
+.hero-text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 2.5;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper {
+   
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 600px) {
+   ul {
+      display: inline-block
+      }
+  }
+  
+  ul li {
+    list-style: none;
+ }
+    
+ h1{
+     
+     margin-bottom: 20px;
+
+ }
+ @media only screen and (max-width: 600px) {
+    h1 {
+      
+    justify-content: center;
+       }
+   }
+
+.fa-search {
+    color: gray;
+    margin-left: 200px;
+    margin-top: 3px;
+    opacity: 0.5;
+    
+}
+
+ 
+ /*BUTTONS*/
+
+
+.input_wrapper {
+
+
+    background-color: white;
+    /*background-color: #fbc531;*/
+    height: 35px;
+    width: 450px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    opacity: 0.7 ;
+
+}
+
+@media only screen and (max-width: 600px){
+    .input_wrapper {
+        
+    width: 200px;
+    }
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold; 
+    font-family: 'Roboto Mono', monospace;
+   
+
+}
+
+ .nameBtn,
+ .capitalBtn,
+ .populBtn {
+     width: 150px;
+     height: 40px;
+     border: none;
+     text-transform:uppercase;
+     font-size: 10px;
+     letter-spacing: 2.5;
+     font-family: 'Roboto Mono', monospace;
+
+ }
+
+ .populBtn {
+     color:white;
+     background-color: #0079b1;
+
+ }
+.capitalBtn {
+    color:white;
+    background-color:#fe9711;
+}
+
+.nameBtn:hover {
+    background-color:#0079b1;
+    box-shadow: 0px 15px 20px rgb(46, 229, 157, 0.4);
+    color: #fff;
+
+}
+
+.capitalBtn:hover{
+    background-color: white;
+    box-shadow: 0px 15px 20px rgb(46, 229, 157, 0.4);
+    color: black;
+}
+
+.populBtn:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px rgb(46, 229, 157, 0.4);
+    color: black;
+}
+
+.paragraph {
+    
+    font-size: 12px;
+    margin-left: -40px;
+}
+@media only screen and (max-width: 600px){
+    .paragraph {
+        
+     margin-left: 0px;
+    }
+}
+
+.flex-container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.flex-container>div {
+
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    margin-top: 10px;
+
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    background-image: url("map_image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+/*.flex-container {
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
+
+
+.searchbtn {
+    background-color: #fbc531;
+    color: black;
+    float: right;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    padding:0px;
+    text-align: center;
+    margin: -10px;
+    border: none;
+
+}
+
+.searchbtn:hover {
+    background-color: #fbc531;
+    box-shadow: 0px 15px 20px rgb(46, 229, 157, 0.4);
+    color: #fff;
+
+}
+
+/* INPUT and TOTAL COUNTRY NUMBER*/
+.countCntr {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    
+    
+}
+/*Input styling*/
+.headerNumber {
+    
+    border: none;
+    outline: none;
+    background: none;
+    margin-bottom: -5px;
+    padding-left:5px;
+   
+    font-size: 16px;
+    font-weight: bold;
+    color: #fbc531;
+    width : 60px
+   
+}
+

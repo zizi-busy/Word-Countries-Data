@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Countries Data</title>
+    <link rel="stylesheet" href="main_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+      <div class="hero-image_container">
+        <div class="hero-text_container">
+          <h1>World Countries Data</h1>
+  
+            <div class="countCntr">
+              <div class="text">
+                <p class="paragraph">Number of countries in the library: <input class="headerNumber" type: readonly> </p>
+              </div>      
+            
+          <div class="countries-sort__paragraph"></div>
+                 
+        </div> <!--text area ends-->  
+          <div class="input_wrapper">
+              <input class="input" type="text" name="" placeholder="Search " /> <i class="fas fa-search"></i>
+          </div>  
+
+        <div class="buttons"></div>   
+          <ul>
+              <li> <button class="nameBtn" type="search"> Name
+                <i class="fas fa-map-marker-alt"></i>
+                </button></li>
+
+              <li> <button class="capitalBtn" type="search">Capital
+                <i class="fas fa-city"></i>
+                </button></li>
+
+              <li><button class="populBtn" type="search">Population
+                <i class="fas fa-users"></i>
+               
+              </button></li>
+          </ul>    
+      </div>
+  
+      <div class="flex-container"></div>
+  
+      <script src="countries.js"></script>
+  </div>
+</html>
