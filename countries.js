@@ -16,7 +16,7 @@ fetch(url)
           for (const country of countries) {
             
             let div = document.createElement('div')
-            let countryName = document.createElement('h2')
+            let countryName = document.createElement('h4')
             let countryCapital = document.createElement('p')
             let countryPopulation = document.createElement('p')
             let countryLanguage = document.createElement ('p')
@@ -69,7 +69,7 @@ fetch(url)
         for (const country of startsWithLetters) {
                 
             let div = document.createElement('div')
-            let countryName = document.createElement('h2')
+            let countryName = document.createElement('h4')
             let countryCapital = document.createElement('p')
             let countryPopulation = document.createElement('p')
             let countryLanguage = document.createElement ('p')
@@ -121,7 +121,7 @@ fetch(url)
         for (const country of startsWithLetters) {
                 
           let div = document.createElement('div')
-          let countryName = document.createElement('h2')
+          let countryName = document.createElement('h4')
           let countryCapital = document.createElement('p')
           let countryPopulation = document.createElement('p')
           let countryLanguage = document.createElement ('p')
@@ -174,7 +174,7 @@ fetch(url)
       for (const country of population) {
               
           let div = document.createElement('div')
-          let countryName = document.createElement('h2')
+          let countryName = document.createElement('h4')
           let countryCapital = document.createElement('p')
           let countryPopulation = document.createElement('p')
           let countryLanguage = document.createElement ('p')
