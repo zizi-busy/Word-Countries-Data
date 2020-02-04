@@ -135,7 +135,7 @@ h1 {
     float: left;
     margin-left: 5px;
     font-size: 16px;
-    font-weight: bold;
+   
     font-family: 'Roboto Mono', monospace;
 
 
@@ -151,6 +151,7 @@ h1 {
     font-size: 10px;
     letter-spacing: 2.5;
     font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
 
 }
 
@@ -207,15 +208,18 @@ h1 {
     margin-bottom: 10px;
 }
 
+
 .flex-container>div {
-    
+   
     line-height: 1.5rem;
     flex-wrap: wrap;
     width: 200px;
     height: 200px;
     
-    text-align: center;
+    text-align: left;
     margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
   
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -234,6 +238,7 @@ h1 {
 
 h4{
     padding-top: 10px;
+  text-align: center;
 }
 
 /* INPUT and TOTAL COUNTRY NUMBER*/
@@ -253,8 +258,6 @@ h4{
     background: none;
     margin-bottom: -5px;
     letter-spacing: 2.5;
-
-
     font-size: 12px;
     font-weight: bold;
     color: #fe9711;
@@ -273,6 +276,8 @@ p {
     font-size: 12px;
     font-family: 'Roboto Mono', monospace;
 }
+
+
 .flag {
     width: 67px;
     height: 42px;
@@ -282,6 +287,101 @@ p {
     -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-left:50px ;
+    
+   
     
     
 }
+
+
+.label-desc{
+    padding: 0px 10px
+}
+
+.select-box {
+    cursor: pointer;
+    position : relative;
+    width: 150px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2.5;
+    font-family: 'Roboto Mono', monospace;
+   
+   
+  }
+
+  .select-box:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px white;
+    color: black;
+}
+  
+  
+  .label {
+    color:white;
+    display: block;
+    font-family:  'Roboto Mono', monospace;
+  }
+  
+  .select {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 5px 0;
+    height: 40px;
+    opacity: 0;
+    -ms-filter: 
+    "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    background: none transparent;
+    border: 0 none;
+    font-family:  'Roboto Mono', monospace;
+    cursor: pointer;
+  
+  }
+  .select-box1 {
+    background: #0079b1
+  }
+  
+  .label {
+    position: relative;
+    padding: 13px 10px;
+    cursor: pointer;
+  }
+
+  .label::before{
+    content: '';
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    border: 1px solid transparent; 
+    height: 0;
+    right: 16px;
+
+  } 
+
+ .label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    pointer-events: none;
+
+   
+    border: 1px solid transparent; 
+    height: 0;
+    right: 16px;
+  }
+
+.label::before {
+    bottom: 55%;
+    border-width: 0 6.5px 8px 6.5px;
+    border-bottom-color: white;
+  }
+
+  .label::after {
+    border-width: 8px 6.5px 0 6.5px;
+    border-top-color: white;
+    top: 55%;
+  }

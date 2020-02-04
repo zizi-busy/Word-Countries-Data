@@ -98,7 +98,7 @@ fetch(url)
 
           
             flexContainer.appendChild(div)
-            console.log (startsWithLetters)
+          
            
             if (startsWithLetters.length < 2 ){
                 countriesSortedParagraph.textContent =
@@ -121,17 +121,17 @@ fetch(url)
         for (const country of startsWithLetters) {
                 
           let div = document.createElement('div')
-          let countryName = document.createElement('h4')
-          let countryCapital = document.createElement('p')
+          let countryCapital = document.createElement('h4')
+          let countryName = document.createElement('p')
           let countryPopulation = document.createElement('p')
           let countryLanguage = document.createElement ('p')
           let cntryFlag = document.createElement('img')
 
           cntryFlag.className = 'flag'
               
-          countryName.textContent =country.name 
-          countryCapital.textContent = `Capital:${ country.capital} `           
-          countryPopulation.textContent = `Population:${ country.population} ` 
+          countryCapital.textContent =country.capital 
+          countryName.textContent = `Country: ${ country.name} `           
+          countryPopulation.textContent = `Population: ${ country.population} ` 
           cntryFlag.src = country.flag
 
          
@@ -142,8 +142,9 @@ fetch(url)
          }
          countryLanguage.textContent =`Languages:${langs}` 
           
-          div.appendChild(countryName)
+      
           div.appendChild(countryCapital)
+          div.appendChild(countryName)
           div.appendChild(countryPopulation)
           div.appendChild(countryLanguage)
           div.appendChild(cntryFlag)
@@ -162,7 +163,7 @@ fetch(url)
       }
 
       })  
-       /*********POPULATION*************/
+       /*********POPULATION************
         
     populbtn.addEventListener('click', populiFilter= () => {
 
@@ -211,6 +212,7 @@ fetch(url)
         }   
       
         
-    })
+    })*/
        
-    })
+  })
+ 
