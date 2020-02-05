@@ -39,10 +39,11 @@ body {
     -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
 }
 
 .hero-text_container {
-    padding: 20px;
+    padding: 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,6 +85,7 @@ ul li {
 h1 {
 
     margin-bottom: 20px;
+    margin-top: 20px;
 
 }
 
@@ -96,7 +98,7 @@ h1 {
 
 .fa-search {
     color: gray;
-    margin-left: 200px;
+    margin-left: 199px;
     margin-top: 3px;
     opacity: 0.5;
 
@@ -114,7 +116,7 @@ h1 {
     height: 35px;
     width: 450px;
     padding: 7px;
-    margin-top: 10px;
+    margin-top: 16px;
     margin-bottom: 10px;
 
     opacity: 0.7;
@@ -211,10 +213,12 @@ h1 {
 
 .flex-container>div {
    
-    line-height: 1.5rem;
+   
+    line-height: 1.2rem;
     flex-wrap: wrap;
     width: 200px;
     height: 200px;
+   
     
     text-align: left;
     margin-top: 15px;
@@ -233,6 +237,8 @@ h1 {
     background-size: cover;
     position: relative;
     font-family: 'Roboto Mono', monospace;
+    word-wrap: break-word;
+    
 
 }
 
@@ -268,7 +274,7 @@ h4{
 .countries-sort__paragraph {
     margin: 16px 0px;
     font-size: 12px;
-    margin-right: 70px;
+    text-align: center;
 
 }
 
@@ -385,3 +391,4 @@ p {
     border-top-color: white;
     top: 55%;
   }
+
