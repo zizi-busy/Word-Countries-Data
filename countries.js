@@ -6,6 +6,7 @@ const populbtn = document.querySelector('.populBtn')
 const inputArea = document.querySelector('.input')
 const countriesSortedParagraph = document.querySelector('.countries-sort__paragraph')
 const selectPop = document.querySelector('.select')
+//let selec = document.querySelector('.example-select')
 
 const url = "https://restcountries.eu/rest/v2/all"
 fetch(url)
@@ -34,6 +35,7 @@ fetch(url)
            const langs = []
            for(const language of country.languages){
              langs.push(language.name)
+            
            }
          
 
@@ -228,6 +230,50 @@ fetch(url)
       })
 
     }
+/*FILTER LANGUAGES 
+
+
+      function lanGuages () {
+        for(const country of countries){
+
+            const langs = []
+                  for(const language of country.languages){
+                    langs.push(language.name)
+                  // console.log (country.name + ' ' + langs) 
+                      
+                  }
+
+            const langSet= new Set (langs)
+          // console.log (langSet.size)
+
+            const counts = []
+            const count = {}
+
+            for (const l of langSet ) {
+              const filteredLang = langs.filter (lng => lng === l)
+             // console.log (filteredLang)
+              counts.push ({ lang: l,count : filteredLang.length})
+            }
+          
+          
+           
+          for (i = 0 ; i < counts.length ; i++){ 
+            
+          let langOpt =document.createElement ('option')
+         
+          langOpt.textContent=`${langs}` 
+          console.log (counts[i])
+
+        
+          selec.appendChild(langOpt);
+          
+          
+          }     
+
+        }
+    
+      }
+      lanGuages ()*/
       
-})
+}) //API end
  

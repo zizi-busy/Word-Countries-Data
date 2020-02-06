@@ -7,7 +7,6 @@
 html {
     width: 100%;
     height: 100%;
-
 }
 
 body {
@@ -15,17 +14,17 @@ body {
     width: 100%;
     line-height: 1.42;
     font-size: 16px;
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
     /* to smooth fonts */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
 .hero-image_container {
     display: flex;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("globe.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("globe.jpg");
     max-height: 50%;
     height: 50%;
 
@@ -34,12 +33,12 @@ body {
     background-size: cover;
     position: relative;
     display: flex;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
 }
 
 .hero-text_container {
@@ -54,12 +53,10 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     letter-spacing: 2.5;
-    font-family: 'Roboto Mono', monospace;
- 
+    font-family: "Roboto Mono", monospace;
 }
 
 .wrapper {
-
     min-height: 100%;
     overflow: hidden;
     position: relative;
@@ -74,7 +71,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
     ul {
-        display: inline-block
+        display: inline-block;
     }
 }
 
@@ -83,15 +80,12 @@ ul li {
 }
 
 h1 {
-
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 @media only screen and (max-width: 600px) {
     h1 {
-
         justify-content: center;
     }
 }
@@ -101,16 +95,11 @@ h1 {
     margin-left: 199px;
     margin-top: 3px;
     opacity: 0.5;
-
 }
-
 
 /*BUTTONS*/
 
-
 .input_wrapper {
-
-
     background-color: white;
     /*background-color: #fbc531;*/
     height: 35px;
@@ -120,12 +109,10 @@ h1 {
     margin-bottom: 10px;
 
     opacity: 0.7;
-
 }
 
 @media only screen and (max-width: 600px) {
     .input_wrapper {
-
         width: 200px;
     }
 }
@@ -137,30 +124,20 @@ h1 {
     float: left;
     margin-left: 5px;
     font-size: 16px;
-   
-    font-family: 'Roboto Mono', monospace;
 
-
+    font-family: "Roboto Mono", monospace;
 }
 
 .nameBtn,
-.capitalBtn,
-.populBtn {
+.capitalBtn {
     width: 150px;
     height: 40px;
     border: none;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 2.5;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     cursor: pointer;
-
-}
-
-.populBtn {
-    color: white;
-    background-color: #0079b1;
-
 }
 
 .capitalBtn {
@@ -172,7 +149,6 @@ h1 {
     background-color: #0079b1;
     box-shadow: 0px 15px 20px white;
     color: #fff;
-
 }
 
 .capitalBtn:hover {
@@ -188,21 +164,18 @@ h1 {
 }
 
 .paragraph {
-
     font-size: 12px;
     margin-left: -40px;
 }
 
 @media only screen and (max-width: 600px) {
     .paragraph {
-
         margin-left: 0px;
     }
 }
 
 /* FLEX CONTAINER *************/
 .flex-container {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -210,41 +183,36 @@ h1 {
     margin-bottom: 10px;
 }
 
-
 .flex-container>div {
-   
-   
     line-height: 1.2rem;
     flex-wrap: wrap;
     width: 200px;
     height: 200px;
-   
-    
+
     text-align: left;
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
 
-  
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     word-wrap: break-word;
-    
-
 }
 
-h4{
+h4 {
     padding-top: 10px;
-  text-align: center;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 /* INPUT and TOTAL COUNTRY NUMBER*/
@@ -252,13 +220,10 @@ h4{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-
 }
 
 /*Input styling*/
 .headerNumber {
-
     border: none;
     outline: none;
     background: none;
@@ -267,128 +232,114 @@ h4{
     font-size: 12px;
     font-weight: bold;
     color: #fe9711;
-    width: 60px
+    width: 60px;
 }
-
 
 .countries-sort__paragraph {
     margin: 16px 0px;
     font-size: 12px;
     text-align: center;
-
 }
 
 p {
     font-size: 12px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
 }
-
 
 .flag {
     width: 67px;
     height: 42px;
     margin-top: 10px;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    margin-left:50px ;
-    
-   
-    
-    
+    margin-left: 50px;
 }
 
-
-.label-desc{
-    padding: 0px 10px
+.label-desc {
+    padding: 0px 10px;
 }
 
 .select-box {
     cursor: pointer;
-    position : relative;
+    position: relative;
     width: 150px;
     height: 40px;
     border: none;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 2.5;
-    font-family: 'Roboto Mono', monospace;
-   
-   
-  }
+    font-family: "Roboto Mono", monospace;
+}
 
-  .select-box:hover {
+.select-box1 {
+    background: #0079b1;
+}
+
+.select-box:hover {
     background-color: white;
     box-shadow: 0px 15px 20px white;
     color: black;
 }
-  
-  
-  .label {
-    color:white;
-    display: block;
-    font-family:  'Roboto Mono', monospace;
-  }
-  
-  .select {
+
+.select {
     width: 100%;
     position: absolute;
     top: 0;
     padding: 5px 0;
     height: 40px;
     opacity: 0;
-    -ms-filter: 
-    "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     background: none transparent;
     border: 0 none;
-    font-family:  'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     cursor: pointer;
-  
-  }
-  .select-box1 {
-    background: #0079b1
-  }
-  
-  .label {
+}
+
+.label {
+    color: white;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+}
+
+.label {
     position: relative;
     padding: 13px 10px;
     cursor: pointer;
-  }
+}
 
-  .label::before{
-    content: '';
+.label::before {
+    content: "";
     display: block;
     position: absolute;
     pointer-events: none;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     height: 0;
     right: 16px;
+}
 
-  } 
-
- .label::after {
-    content: '';
+.label::after {
+    content: "";
     display: block;
     position: absolute;
     pointer-events: none;
 
-   
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     height: 0;
     right: 16px;
-  }
+}
 
 .label::before {
     bottom: 55%;
     border-width: 0 6.5px 8px 6.5px;
     border-bottom-color: white;
-  }
+}
 
-  .label::after {
+.label::after {
     border-width: 8px 6.5px 0 6.5px;
     border-top-color: white;
     top: 55%;
-  }
-
+}
