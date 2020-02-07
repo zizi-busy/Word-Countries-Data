@@ -42,7 +42,7 @@ body {
 }
 
 .hero-text_container {
-    padding: 44px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +54,18 @@ body {
     color: white;
     letter-spacing: 2.5;
     font-family: "Roboto Mono", monospace;
+}
+@media only screen and (max-width: 600px){
+
+    .hero-text_container{
+        width: 100%;
+       padding-top: 20px;
+       padding-bottom: 10px;
+       padding-left: 10px;
+       padding-right:10px;
+
+  
+    }
 }
 
 .wrapper {
@@ -86,7 +98,9 @@ h1 {
 
 @media only screen and (max-width: 600px) {
     h1 {
-        justify-content: center;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -95,6 +109,13 @@ h1 {
     margin-left: 199px;
     margin-top: 3px;
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .fa-search {
+        margin-left: 166px;
+        margin-top: -19px
+    }
 }
 
 /*BUTTONS*/
@@ -150,6 +171,14 @@ h1 {
     box-shadow: 0px 15px 20px white;
     color: #fff;
 }
+@media only screen and (max-width: 600px){
+    .nameBtn:hover {
+        background-color: whitesmoke;
+        box-shadow: 0px 15px 20px white;
+        color: black;
+    }
+}
+
 
 .capitalBtn:hover {
     background-color: white;
@@ -164,13 +193,19 @@ h1 {
 }
 
 .paragraph {
+
     font-size: 12px;
-    margin-left: -40px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 @media only screen and (max-width: 600px) {
     .paragraph {
         margin-left: 0px;
+        font-size: 10px;
+        text-align: center;
     }
 }
 
@@ -239,6 +274,11 @@ h4 {
     margin: 16px 0px;
     font-size: 12px;
     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .countries-sort__paragraph{
+        font-size: 10px;
+    }
 }
 
 p {
