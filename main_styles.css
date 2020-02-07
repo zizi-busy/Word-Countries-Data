@@ -44,6 +44,8 @@ body {
 .hero-text_container {
     
     display: flex;
+   
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -101,6 +103,7 @@ h1 {
         margin-top: 20px;
         font-size: 20px;
         text-align: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -119,6 +122,10 @@ h1 {
 }
 
 /*BUTTONS*/
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .input_wrapper {
     background-color: white;
@@ -135,6 +142,7 @@ h1 {
 @media only screen and (max-width: 600px) {
     .input_wrapper {
         width: 200px;
+      
     }
 }
 
@@ -173,7 +181,7 @@ h1 {
 }
 @media only screen and (max-width: 600px){
     .nameBtn:hover {
-        background-color: whitesmoke;
+        background-color: white;
         box-shadow: 0px 15px 20px white;
         color: black;
     }
