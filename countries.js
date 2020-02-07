@@ -6,7 +6,7 @@ const populbtn = document.querySelector('.populBtn')
 const inputArea = document.querySelector('.input')
 const countriesSortedParagraph = document.querySelector('.countries-sort__paragraph')
 const selectPop = document.querySelector('.select')
-//let selec = document.querySelector('.example-select')
+let selec = document.querySelector('.example-select')
 
 const url = "https://restcountries.eu/rest/v2/all"
 fetch(url)
@@ -126,6 +126,7 @@ fetch(url)
 
     capitalbtn.addEventListener('click', startsWithLetter = () => {
         flexContainer.textContent = '' ;
+      
 
         let startsWithLetters = countries.filter((country) => country.capital.toLowerCase().startsWith(inputArea.value.toLowerCase()));
  
@@ -230,21 +231,38 @@ fetch(url)
       })
 
     }
-/*FILTER LANGUAGES 
+   // SORT CAPITALS
+/*
+    function sortCapital (){ 
+    
+      countries.sort((a, b) => {
+          if(a.capital < b.capital) return -1;
+          if(a.capital > b.capital) return 1;
+          return 0;
+      })
+     
+  }*/
+
+
 
 
       function lanGuages () {
         for(const country of countries){
-
+          let l = country['languages']
+          console.log(l)
+        
             const langs = []
                   for(const language of country.languages){
                     langs.push(language.name)
-                  // console.log (country.name + ' ' + langs) 
+                
                       
                   }
-
+            
+                  //console.log (country.name + ': ' + langs.toString())
+   /*
             const langSet= new Set (langs)
           // console.log (langSet.size)
+
 
             const counts = []
             const count = {}
@@ -253,27 +271,27 @@ fetch(url)
               const filteredLang = langs.filter (lng => lng === l)
              // console.log (filteredLang)
               counts.push ({ lang: l,count : filteredLang.length})
-            }
+            } 
           
           
            
-          for (i = 0 ; i < counts.length ; i++){ 
+          for (i = 0 ; i < langs.length ; i++){ 
             
           let langOpt =document.createElement ('option')
          
           langOpt.textContent=`${langs}` 
-          console.log (counts[i])
+        
 
         
           selec.appendChild(langOpt);
           
           
-          }     
+          }   */  
 
         }
     
       }
-      lanGuages ()*/
+      lanGuages ()
       
 }) //API end
  
