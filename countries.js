@@ -54,7 +54,10 @@ fetch(url)
     generateCountry()
 
     capitalbtn.addEventListener ('click',sortCountries)
+
    namebtn.addEventListener('click', sortCountries )
+
+  
 
     function sortCountries() {
       
@@ -174,7 +177,7 @@ fetch(url)
     })  
 
        /*********POPULATION************/
-        
+        console.log (countries)
   
     selectPop.addEventListener('click', populiFilter= () => {
 
@@ -244,53 +247,16 @@ fetch(url)
   }*/
 
 
-
-
-      function lanGuages () {
+    function lanGuages () {
+      
         for(const country of countries){
-          let l = country['languages']
-          console.log(l)
-        
-            const langs = []
-                  for(const language of country.languages){
-                    langs.push(language.name)
-                
-                      
-                  }
-            
-                  //console.log (country.name + ': ' + langs.toString())
-   /*
-            const langSet= new Set (langs)
-          // console.log (langSet.size)
-
-
-            const counts = []
-            const count = {}
-
-            for (const l of langSet ) {
-              const filteredLang = langs.filter (lng => lng === l)
-             // console.log (filteredLang)
-              counts.push ({ lang: l,count : filteredLang.length})
-            } 
+          const {languages}  = country
+          const langList = languages.map((lang) => lang.name)
           
-          
-           
-          for (i = 0 ; i < langs.length ; i++){ 
-            
-          let langOpt =document.createElement ('option')
-         
-          langOpt.textContent=`${langs}` 
-        
-
-        
-          selec.appendChild(langOpt);
-          
-          
-          }   */  
-
+          const allLangs = [...langList]
+         // console.log(allLangs)    
         }
-    
-      }
+  }
       lanGuages ()
       
 }) //API end
