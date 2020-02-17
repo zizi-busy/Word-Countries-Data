@@ -27,7 +27,7 @@ fetch(url)
             cntryFlag.className = 'flag'
 
             countryName.textContent =country.name 
-            countryCapital.textContent = `Capital:${ country.capital} `           
+            countryCapital.textContent = `Capital:${country.capital} `           
             countryPopulation.textContent = `Population:${ country.population.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}` 
             cntryFlag.src = country.flag
    

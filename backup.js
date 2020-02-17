@@ -1,6 +1,7 @@
 function lanGuages () {
     for(const country of countries){
-      const {languages}  = country
+      const {languages}  = country //destructure 
+      
       const langList = languages.map((lang) => lang.name)
       console.log(langList)  
 // const langs = []
